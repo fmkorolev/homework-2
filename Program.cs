@@ -23,7 +23,7 @@ trippledigits(num);
 */
 
 // задача 15
-
+/*
 Console.Write("Input the number of the day of the week: ");
 int day = Convert.ToInt32(Console.ReadLine());
 void Dayoff( int d)
@@ -44,4 +44,26 @@ void Dayoff( int d)
         
 }
 Dayoff(day);
+*/
+//задача 13
+
+
+ Console.Write("Input number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int ThirdNum(int n)
+{   
+    Console.Write(n + " -> ");
+    if(n < 100)
+    {
+        Console.WriteLine("Third digit doesn't exsist");
+        return n;
+    }
+    else
+    {
+        int result = (n %10)  ;
+        Console.WriteLine(result);
+        return result;
+    }
+}
+ThirdNum(num);
 
